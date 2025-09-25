@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boundless Careers Webflow Component Demo</title>
+    
+    <!-- Component Styles -->
+	<script src="dist/index.js"></script>
+    <link rel="stylesheet" href="dist/index.css">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .demo-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .demo-header h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .demo-header p {
+            color: #666;
+            font-size: 18px;
+        }
+        
+        .demo-section {
+            margin-bottom: 40px;
+        }
+        
+        .demo-section h2 {
+            color: #333;
+            border-bottom: 2px solid #1976d2;
+            padding-bottom: 10px;
+        }
+        
+        .code-block {
+            background: #2d2d2d;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        .code-block code {
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        }
+
+        .webflow-section {
+            background: #e3f2fd;
+            border-left: 4px solid #1976d2;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .webflow-section h3 {
+            color: #1976d2;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-header">
+        <h1>Boundless Careers Webflow Component</h1>
+        <p>A standalone React component for displaying careers/job listings - Ready for Webflow CMS integration</p>
+    </div>
+
+    <div class="webflow-section">
+        <h3>🚀 Webflow Integration Ready</h3>
+        <p>This component is designed to work seamlessly with Webflow CMS. Simply add the script and CSS to your Webflow project and you're ready to go!</p>
+    </div>
+
+    <div class="demo-section">
+        <h2>Component Demos</h2>
+        <p>Below are all three careers components in action:</p>
+        
+        <h3>1. Main Careers Listings</h3>
+        <p>Full job listings with filtering and pagination:</p>
+        <div id="bl-careers-webflow-root"></div>
+        
+        <h3>2. Featured Job Listings</h3>
+        <p>Featured/priority job positions:</p>
+        <div id="bl-careers-webflow-featured"></div>
+        
+    </div>
+
+    <div class="demo-section">
+        <h2>API Integration</h2>
+        <p>The component integrates with the Greenhouse API endpoint:</p>
+        <div class="code-block">
+            <code>https://boards-api.greenhouse.io/v1/boards/boundlessimmigration/departments</code>
+        </div>
+        <p>You can customize this endpoint in the configuration if needed.</p>
+    </div>
+
+    <div class="demo-section">
+        <h2>Webflow Integration Instructions</h2>
+        
+        
+        <h3>1. Add Component Files</h3>
+        <p>Upload the component files to your Webflow project or host them externally:</p>
+        <div class="code-block">
+            <code>&lt;link rel="stylesheet" href="dist/index.css"&gt;<br>
+&lt;script src="dist/index.js"&gt;&lt;/script&gt;</code>
+        </div>
+        
+        <h3>2. Add Container Elements</h3>
+        <p>Add these HTML elements where you want the components to appear:</p>
+        <div class="code-block">
+            <code>// Main careers listings<br>
+&lt;div id="bl-careers-webflow-root"&gt;&lt;/div&gt;<br><br>
+// Featured job listings<br>
+&lt;div id="bl-careers-webflow-featured"&gt;&lt;/div&gt;<br><br>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>Webflow-Specific Features</h2>
+        <ul>
+            <li><strong>CMS Integration:</strong> Works seamlessly with Webflow CMS collections</li>
+            <li><strong>Responsive Design:</strong> Automatically adapts to Webflow's responsive breakpoints</li>
+            <li><strong>Custom Styling:</strong> CSS classes that can be customized in Webflow Designer</li>
+            <li><strong>No Server Required:</strong> Pure client-side component that works with static hosting</li>
+            <li><strong>SEO Friendly:</strong> Server-side rendering compatible</li>
+            <li><strong>Performance Optimized:</strong> Lightweight and fast loading</li>
+        </ul>
+    </div>
+
+    <div class="demo-section">
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Three Component Types:</strong>
+                <ul>
+                    <li><strong>Main Listings:</strong> Full job listings with filtering and pagination</li>
+                    <li><strong>Featured Listings:</strong> Priority/featured job positions</li>
+                    <li><strong>Application Form:</strong> Direct job application integration</li>
+                </ul>
+            </li>
+            <li><strong>Job Listings:</strong> Display all available job positions from Greenhouse API</li>
+            <li><strong>Filtering:</strong> Filter jobs by location and department</li>
+            <li><strong>Pagination:</strong> Navigate through job listings with pagination</li>
+            <li><strong>Responsive Design:</strong> Mobile-friendly interface</li>
+            <li><strong>Dark Mode Support:</strong> Automatic dark mode detection</li>
+            <li><strong>Standalone:</strong> No WordPress or PHP dependencies required</li>
+        </ul>
+    </div>
+
+    
+    <script>
+        // The component should auto-initialize when the DOM is ready
+        // You can also manually initialize it:
+        // BLCareersWebflow.init('bl-careers-webflow-root');
+        
+        console.log('Careers component loaded. Available methods:', Object.keys(BLCareersWebflow));
+        
+        // Example of custom configuration
+        // BLCareersWebflow.setConfig({
+        //     companyName: 'Boundless Immigration',
+        //     theme: 'light'
+        // });
+    </script>
+</body>
+</html>
