@@ -1,4 +1,4 @@
-# Boundless Careers Webflow Component
+# Careers Webflow Component
 
 A standalone React component for displaying careers/job listings, specifically designed for Webflow CMS integration. This component integrates with the Greenhouse API to display job openings without requiring any server-side dependencies.
 
