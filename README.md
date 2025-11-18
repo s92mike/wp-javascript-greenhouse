@@ -24,8 +24,8 @@ The bulk of the API components are in hook `useCareersAPI` in `src/hooks/useCare
 ### Option 2: Build from Source
 ```bash
 # Clone the repository
-git clone https://github.com/boundlesshq/bl-careers-webflow.git
-cd bl-careers-webflow
+git clone https://github.com/s92mike/fm-careers-webflow.git
+cd fm-careers-webflow
 
 # Install dependencies
 npm install --legacy-peer-deps
@@ -54,18 +54,18 @@ Add these HTML elements where you want the components to appear:
 
 ```html
 <!-- Main careers listings -->
-<div id="bl-careers-webflow-root"></div>
+<div id="fm-careers-webflow-root"></div>
 
 <!-- Featured job listings -->
-<div id="bl-careers-webflow-featured"></div>
+<div id="fm-careers-webflow-featured"></div>
 ```
 
 ### CSS Customization
 The component uses CSS classes that can be customized in Webflow Designer:
-- `.bl-careers-container` - Main container
-- `.bl-careers-filters` - Filter section
-- `.bl-careers-list` - Job listings
-- `.bl-careers-pagination` - Pagination controls
+- `.fm-careers-container` - Main container
+- `.fm-careers-filters` - Filter section
+- `.fm-careers-list` - Job listings
+- `.fm-careers-pagination` - Pagination controls
 
 You can customize this endpoint in the configuration if needed.
 

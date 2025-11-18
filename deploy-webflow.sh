@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Boundless Careers Webflow Component Deployment Script
+# Careers Webflow Component Deployment Script
 # This script builds and prepares the component for Webflow integration
 
-echo "🚀 Building Boundless Careers Webflow Component..."
+echo "🚀 Building Careers Webflow Component..."
 
 # Clean previous builds
 echo "🧹 Cleaning previous builds..."
@@ -23,8 +23,8 @@ if [ $? -eq 0 ]; then
     echo "✅ Build successful!"
     echo ""
     echo "📁 Files ready for Webflow:"
-    echo "   - dist/bl-careers-webflow.js"
-    echo "   - dist/bl-careers-webflow.css"
+    echo "   - dist/fm-careers-webflow.js"
+    echo "   - dist/fm-careers-webflow.css"
     echo ""
     echo "🌐 To integrate with Webflow:"
     echo "   1. Upload the JS and CSS files to your Webflow project"

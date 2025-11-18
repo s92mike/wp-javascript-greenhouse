@@ -27,9 +27,9 @@ const ApplyComponent = () => {
 
 	if ( ! jobId ) {
 		return (
-			<div className="bl-careers-webflow bl-careers-webflow--apply">
-				<div className="bl-careers-webflow-container">
-					<div className="bl-careers-webflow-error">
+			<div className="fm-careers-webflow fm-careers-webflow--apply">
+				<div className="fm-careers-webflow-container">
+					<div className="fm-careers-webflow-error">
 						<p>No job ID specified. Please select a job to apply for.</p>
 					</div>
 				</div>
@@ -38,10 +38,10 @@ const ApplyComponent = () => {
 	}
 
 	return (
-		<div className="bl-careers-webflow bl-careers-webflow--apply">
-			<div className="bl-careers-webflow-container">
-				<h2 className="bl-careers-webflow-title">Apply for Position</h2>
-				<p className="bl-careers-webflow-subtitle">
+		<div className="fm-careers-webflow fm-careers-webflow--apply">
+			<div className="fm-careers-webflow-container">
+				<h2 className="fm-careers-webflow-title">Apply for Position</h2>
+				<p className="fm-careers-webflow-subtitle">
 					Job ID: { jobId }
 				</p>
 				<div id="grnhse_app"></div>

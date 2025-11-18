@@ -31,7 +31,7 @@ const CareersComponent = () => {
 	const onPageChange = ( page ) => {
 		setCurrentPage( page );
 		// Scroll to top of component
-		const container = document.getElementById( 'bl-careers-webflow-root' );
+		const container = document.getElementById( 'fm-careers-webflow-root' );
 		if ( container ) {
 			container.scrollIntoView( { behavior: 'smooth', block: 'start' } );
 		}
@@ -77,8 +77,8 @@ const CareersComponent = () => {
 
 	if ( loading ) {
 		return (
-			<div className="bl-careers-webflow">
-				<div className="bl-careers-webflow-loading">
+			<div className="fm-careers-webflow">
+				<div className="fm-careers-webflow-loading">
 					<p>Loading careers...</p>
 				</div>
 			</div>
@@ -87,8 +87,8 @@ const CareersComponent = () => {
 
 	if ( error ) {
 		return (
-			<div className="bl-careers-webflow">
-				<div className="bl-careers-webflow-error">
+			<div className="fm-careers-webflow">
+				<div className="fm-careers-webflow-error">
 					<p>Error loading careers: { error.message }</p>
 				</div>
 			</div>
@@ -96,9 +96,9 @@ const CareersComponent = () => {
 	}
 
 	return (
-		<div className="bl-careers-webflow">
-			<div className="bl-careers-webflow-container">
-				<h2 className="bl-careers-webflow-title">All Roles</h2>
+		<div className="fm-careers-webflow">
+			<div className="fm-careers-webflow-container">
+				<h2 className="fm-careers-webflow-title">All Roles</h2>
 				
 				<Filters
 					locations={ locations }

@@ -1,6 +1,6 @@
 # Webflow Integration Guide
 
-This guide will help you integrate the Boundless Careers component into your Webflow project.
+This guide will help you integrate the Careers component into your Webflow project.
 
 ## 🚀 Quick Start
 
@@ -14,14 +14,14 @@ In your Webflow project, go to **Project Settings > Custom Code** and add this t
 
 ### 2. Add Component Files
 Upload the following files to your Webflow project:
-- `bl-careers-webflow.js` (JavaScript component)
-- `bl-careers-webflow.css` (Styles)
+- `fm-careers-webflow.js` (JavaScript component)
+- `fm-careers-webflow.css` (Styles)
 
 Then add these to the `<head>` section:
 
 ```html
-<link rel="stylesheet" href="path/to/bl-careers-webflow.css">
-<script src="path/to/bl-careers-webflow.js"></script>
+<link rel="stylesheet" href="path/to/fm-careers-webflow.css">
+<script src="path/to/fm-careers-webflow.js"></script>
 ```
 
 ### 3. Add Container Elements
@@ -29,13 +29,13 @@ In your Webflow page, add **HTML Embed** elements with these IDs:
 
 ```html
 <!-- For main job listings -->
-<div id="bl-careers-webflow-root"></div>
+<div id="fm-careers-webflow-root"></div>
 
 <!-- For featured jobs -->
-<div id="bl-careers-webflow-featured"></div>
+<div id="fm-careers-webflow-featured"></div>
 
 <!-- For job application form -->
-<div id="bl-careers-webflow-apply"></div>
+<div id="fm-careers-webflow-apply"></div>
 ```
 
 ## 🎨 Customization
@@ -70,19 +70,19 @@ The component automatically adapts to Webflow's responsive breakpoints:
 ### Careers Page
 Add the main component to display all job openings:
 ```html
-<div id="bl-careers-webflow-root"></div>
+<div id="fm-careers-webflow-root"></div>
 ```
 
 ### Featured Jobs Section
 Add to homepage or sidebar:
 ```html
-<div id="bl-careers-webflow-featured"></div>
+<div id="fm-careers-webflow-featured"></div>
 ```
 
 ### Job Application Page
 Add to individual job pages:
 ```html
-<div id="bl-careers-webflow-apply"></div>
+<div id="fm-careers-webflow-apply"></div>
 ```
 
 ## 🔧 Advanced Integration
@@ -90,11 +90,11 @@ Add to individual job pages:
 ### Custom Styling
 Override component styles in Webflow Designer:
 ```css
-.bl-careers-container {
+.fm-careers-container {
     /* Your custom styles */
 }
 
-.bl-careers-filters {
+.fm-careers-filters {
     /* Custom filter styling */
 }
 ```

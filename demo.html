@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boundless Careers Webflow Component Demo</title>
+    <title>Careers Webflow Component Demo</title>
     
     <!-- Component Styles -->
 	<script src="dist/index.js"></script>
@@ -71,7 +71,7 @@
 </head>
 <body>
     <div class="demo-header">
-        <h1>Boundless Careers Webflow Component</h1>
+        <h1>Careers Webflow Component</h1>
         <p>A standalone React component for displaying careers/job listings - Ready for Webflow CMS integration</p>
     </div>
 
@@ -86,11 +86,11 @@
         
         <h3>1. Main Careers Listings</h3>
         <p>Full job listings with filtering and pagination:</p>
-        <div id="bl-careers-webflow-root"></div>
+        <div id="fm-careers-webflow-root"></div>
         
         <h3>2. Featured Job Listings</h3>
         <p>Featured/priority job positions:</p>
-        <div id="bl-careers-webflow-featured"></div>
+        <div id="fm-careers-webflow-featured"></div>
         
     </div>
 
@@ -118,9 +118,9 @@
         <p>Add these HTML elements where you want the components to appear:</p>
         <div class="code-block">
             <code>// Main careers listings<br>
-&lt;div id="bl-careers-webflow-root"&gt;&lt;/div&gt;<br><br>
+&lt;div id="fm-careers-webflow-root"&gt;&lt;/div&gt;<br><br>
 // Featured job listings<br>
-&lt;div id="bl-careers-webflow-featured"&gt;&lt;/div&gt;<br><br>
+&lt;div id="fm-careers-webflow-featured"&gt;&lt;/div&gt;<br><br>
         </div>
     </div>
 
@@ -159,13 +159,13 @@
     <script>
         // The component should auto-initialize when the DOM is ready
         // You can also manually initialize it:
-        // BLCareersWebflow.init('bl-careers-webflow-root');
+        // fmCareersWebflow.init('fm-careers-webflow-root');
         
-        console.log('Careers component loaded. Available methods:', Object.keys(BLCareersWebflow));
+        console.log('Careers component loaded. Available methods:', Object.keys(fmCareersWebflow));
         
         // Example of custom configuration
-        // BLCareersWebflow.setConfig({
-        //     companyName: 'Boundless Immigration',
+        // fmCareersWebflow.setConfig({
+        //     companyName: 'Dream Team',
         //     theme: 'light'
         // });
     </script>

@@ -7,8 +7,8 @@ const FeaturedComponent = () => {
 
 	if ( loading ) {
 		return (
-			<div className="bl-careers-webflow">
-				<div className="bl-careers-webflow-loading">
+			<div className="fm-careers-webflow">
+				<div className="fm-careers-webflow-loading">
 					<p>Loading featured roles...</p>
 				</div>
 			</div>
@@ -17,8 +17,8 @@ const FeaturedComponent = () => {
 
 	if ( error ) {
 		return (
-			<div className="bl-careers-webflow">
-				<div className="bl-careers-webflow-error">
+			<div className="fm-careers-webflow">
+				<div className="fm-careers-webflow-error">
 					<p>Error loading featured roles: { error.message }</p>
 				</div>
 			</div>
@@ -31,9 +31,9 @@ const FeaturedComponent = () => {
 	}
 
 	return (
-		<div className="bl-careers-webflow bl-careers-webflow--featured">
-			<div className="bl-careers-webflow-container">
-				<h2 className="bl-careers-webflow-title">Featured Roles</h2>
+		<div className="fm-careers-webflow fm-careers-webflow--featured">
+			<div className="fm-careers-webflow-container">
+				<h2 className="fm-careers-webflow-title">Featured Roles</h2>
 				<RolesList
 					roles={ featuredListings }
 					onRoleClick={ () => {} }

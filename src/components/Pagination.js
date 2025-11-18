@@ -45,22 +45,22 @@ const Pagination = ( { currentPage, totalPages, onPageChange } ) => {
 	const pageNumbers = getPageNumbers();
 
 	return (
-		<div className="bl-careers-webflow-pagination">
+		<div className="fm-careers-webflow-pagination">
 			{ currentPage > 1 && (
 				<button
-					className="bl-careers-webflow-pagination-btn bl-careers-webflow-pagination-btn--prev"
+					className="fm-careers-webflow-pagination-btn fm-careers-webflow-pagination-btn--prev"
 					onClick={ () => onPageChange( currentPage - 1 ) }
 				>
 					&larr; Previous
 				</button>
 			) }
 
-			<div className="bl-careers-webflow-pagination-numbers">
+			<div className="fm-careers-webflow-pagination-numbers">
 				{ pageNumbers.map( ( page, index ) => (
 					<button
 						key={ index }
-						className={ `bl-careers-webflow-pagination-btn bl-careers-webflow-pagination-btn--number${
-							page === currentPage ? ' bl-careers-webflow-pagination-btn--active' : ''
+						className={ `fm-careers-webflow-pagination-btn fm-careers-webflow-pagination-btn--number${
+							page === currentPage ? ' fm-careers-webflow-pagination-btn--active' : ''
 						}` }
 						onClick={ () => {
 							if ( page !== '...' ) {
@@ -76,7 +76,7 @@ const Pagination = ( { currentPage, totalPages, onPageChange } ) => {
 
 			{ currentPage < totalPages && (
 				<button
-					className="bl-careers-webflow-pagination-btn bl-careers-webflow-pagination-btn--next"
+					className="fm-careers-webflow-pagination-btn fm-careers-webflow-pagination-btn--next"
 					onClick={ () => onPageChange( currentPage + 1 ) }
 				>
 					Next &rarr;

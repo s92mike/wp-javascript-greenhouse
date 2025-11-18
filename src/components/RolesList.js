@@ -2,7 +2,7 @@ import React from 'react';
 import RoleRow from './RoleRow';
 
 const RolesList = ( { roles, onRoleClick, onClearFilters } ) => (
-	<div className="bl-careers-webflow-roles-list">
+	<div className="fm-careers-webflow-roles-list">
 		{ roles && roles.length > 0 ? (
 			roles.map( ( role, idx ) => {
 				return (
@@ -15,9 +15,9 @@ const RolesList = ( { roles, onRoleClick, onClearFilters } ) => (
 				);
 			} )
 		) : (
-			<div className="bl-careers-webflow-roles-list-empty">
+			<div className="fm-careers-webflow-roles-list-empty">
 				<p>
-					No jobs found. <a href="#bl-careers-webflow-filter-reset" onClick={ ( e ) => {
+					No jobs found. <a href="#fm-careers-webflow-filter-reset" onClick={ ( e ) => {
 						e.preventDefault();
 						onClearFilters();
 					} }>Reset filters</a>

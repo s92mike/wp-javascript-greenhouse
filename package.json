@@ -1,8 +1,8 @@
 {
-  "name": "bl-careers-webflow",
+  "name": "fm-careers-webflow",
   "version": "1.0.0",
   "description": "Careers component for Webflow integration - Greenhouse API integration without WordPress dependencies.",
-  "main": "dist/bl-careers-webflow.js",
+  "main": "dist/fm-careers-webflow.js",
   "scripts": {
     "start": "webpack watch --env mode=development",
     "dev": "webpack watch --env mode=development",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boundlesshq/bl-careers-webflow.git"
+    "url": "git+https://github.com/s92mike/fm-careers-webflow.git"
   },
-  "author": "Traffic Team",
+  "author": "Dream Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/boundlesshq/bl-careers-webflow/issues"
+    "url": "https://github.com/s92mike/fm-careers-webflow/issues"
   },
-  "homepage": "https://github.com/boundlesshq/bl-careers-webflow#readme",
+  "homepage": "https://github.com/s92mike/fm-careers-webflow#readme",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/eslint-parser": "^7.19.1",

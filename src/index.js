@@ -12,27 +12,27 @@ const defaultConfig = {
 	},
 	theme: 'auto', // 'auto', 'light', 'dark'
 	locale: 'en',
-	companyName: 'Boundless Immigration'
+	companyName: 'Dream Team'
 };
 
 // Initialize the component when DOM is ready
 document.addEventListener( 'DOMContentLoaded', () => {
 	// Initialize main careers component
-	const mainContainer = document.getElementById( 'bl-careers-webflow-root' );
+	const mainContainer = document.getElementById( 'fm-careers-webflow-root' );
 	if ( mainContainer ) {
 		const root = createRoot( mainContainer );
 		root.render( <CareersComponent config={defaultConfig} /> );
 	}
 
 	// Initialize featured component
-	const featuredContainer = document.getElementById( 'bl-careers-webflow-featured' );
+	const featuredContainer = document.getElementById( 'fm-careers-webflow-featured' );
 	if ( featuredContainer ) {
 		const root = createRoot( featuredContainer );
 		root.render( <FeaturedComponent config={defaultConfig} /> );
 	}
 
 	// Initialize apply component
-	const applyContainer = document.getElementById( 'bl-careers-webflow-apply' );
+	const applyContainer = document.getElementById( 'fm-careers-webflow-apply' );
 	if ( applyContainer ) {
 		const root = createRoot( applyContainer );
 		root.render( <ApplyComponent config={defaultConfig} /> );
@@ -73,7 +73,7 @@ window.BLCareersWebflow = {
 	// Utility methods for Webflow integration
 	refresh: () => {
 		// Re-initialize all components with current config
-		const containers = ['bl-careers-webflow-root', 'bl-careers-webflow-featured', 'bl-careers-webflow-apply'];
+		const containers = ['fm-careers-webflow-root', 'fm-careers-webflow-featured', 'fm-careers-webflow-apply'];
 		containers.forEach(containerId => {
 			const container = document.getElementById(containerId);
 			if (container) {

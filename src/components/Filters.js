@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Filters = ( { locations, departments, selectedLocation, selectedDepartment, onLocationChange, onDepartmentChange } ) => (
-	<div className="bl-careers-webflow-filters" id="bl-careers-webflow-filters">
-		<div className="bl-careers-webflow-select-container">
+	<div className="fm-careers-webflow-filters" id="fm-careers-webflow-filters">
+		<div className="fm-careers-webflow-select-container">
 			<select
-				className="bl-careers-webflow-select bl-careers-webflow-select-location"
+				className="fm-careers-webflow-select fm-careers-webflow-select-location"
 				value={ selectedLocation }
 				onChange={ ( e ) => onLocationChange( e.target.value ) }
 			>
@@ -14,9 +14,9 @@ const Filters = ( { locations, departments, selectedLocation, selectedDepartment
 				) ) }
 			</select>
 		</div>
-		<div className="bl-careers-webflow-select-container">
+		<div className="fm-careers-webflow-select-container">
 			<select
-				className="bl-careers-webflow-select bl-careers-webflow-select-department"
+				className="fm-careers-webflow-select fm-careers-webflow-select-department"
 				value={ selectedDepartment }
 				onChange={ ( e ) => onDepartmentChange( e.target.value ) }
 			>
